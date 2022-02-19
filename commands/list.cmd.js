@@ -14,11 +14,13 @@ module.exports = {
             .setDescription("Komendy:")
             .setFooter("2021-2022 ©Polska Federacja Esportowa")
             //
-            .addField("!teams", "Komenda wyświetlająca drużyny które zapisały się na turniej obecnie organizowany przez PFE")
-            .addField("!aboutpfe", "Tutaj znajdziesz najważniejsze informacje o PFE")
-            .addField("!info", "Informacje techniczne odnośnie bota")
-            .addField("!clear", "!clear <liczba_wiadomości_do_usunięcia>")
-            .addField("!list", "Komenda wyświetla listę wszytskich komend")
+            .addField("?teams", "Komenda wyświetlająca drużyny które zapisały się na turniej obecnie organizowany przez PFE")
+            .addField("?fb", "Tutaj znajdziesz naszego facebook`a")
+            .addField("?info", "Informacje techniczne odnośnie bota")
+            .addField("?clear", "!clear <liczba_wiadomości_do_usunięcia>")
+            .addField("?list", "Komenda wyświetla listę wszytskich komend")
+            .addField("?twitch", "Po kliknięciu przekieruje Cię na naszego twitcha")
+            .addField("?partners", "Zobaczy naszych partnerów i komendy do nich")
 
 
         channel.send({ embeds: [cmdList] })

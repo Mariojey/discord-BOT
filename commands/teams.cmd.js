@@ -23,11 +23,11 @@ module.exports = {
 
         //WYsyłanie na kanał
 
-        var workbook = XLSX.readFile(__dirname + "XLSX_FILE");
+        var workbook = XLSX.readFile(__dirname + "/../files/triple-crown-cup-2022.xlsx");
         var sheet_name_list = workbook.SheetNames;
         var xlData = XLSX.utils.sheet_to_json(workbook.Sheets[sheet_name_list[0]]);
 
-        var bigField = "**lp** **Nick gracza&NIckKapitana**";
+        var bigField = "**lp** **Nick gracza&NIckKapitana**\n";
         var index = 1
 
         xlData.forEach(obj => {
@@ -38,7 +38,7 @@ module.exports = {
 
         const teamsBot = new MessageEmbed()
 
-        .setTitle("Informacje o zespołach")
+        .setTitle("Informacje o zespołach z turnieju Triple Crown 2022")
             .setColor("0x00FF00")
             .setDescription("Zapisane drużyny\n\n" + bigField)
             .setFooter("2021-2022 ©Polska Federacja Esportowa");

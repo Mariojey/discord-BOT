@@ -2,7 +2,9 @@ const Discord = require("discord.js");
 const MessageEmbed = require('discord.js').MessageEmbed;
 const config = require("../config/config.js");
 const commandHandler = require("../handlers/cmd.handler.js")
-const { token } = config
+const { token } = config;
+// CONNECT DO BAZY
+// const mongoose = require('mongoose');
 
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] })
 

@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const { botAuthor, botName, npmVersion, botVersion, nodeVersion, nodemonVersion } = require(__dirname + "/../config/config.js")
+const { botAuthor, botName, npmVersion, botVersion, nodeVersion, nodemonVersion, prefix } = require(__dirname + "/../config/config.js")
 
 
 module.exports = {
@@ -18,6 +18,7 @@ module.exports = {
             .setDescription("Specyfikacja bota PFE_info")
             .setFooter("2021-2022 ©Polska Federacja Esportowa")
             //
+            .addField("Prefix", prefix)
             .addField("Nazwa", botName)
             .addField("Wersja", botVersion, true)
             .addField("Node.js", nodeVersion)
